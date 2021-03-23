@@ -1,0 +1,51 @@
+<!--顶部个人信息区域-->
+<view class="head">
+  <!--微信登录按钮-->
+  <button class="wxlogin" wx:if="{{!wxInfo.gender}}" plain open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+    <image class="wxicon" src="/images/mine/wxicon.png"></image>
+    <text>微信一键登录</text>
+  </button>
+  <!--若已登录 显示头像 昵称等-->
+  <view class="user" wx:else>
+    <image class="avatarUrl" src="{{wxInfo.avatarUrl}}"></image>
+    <view class="info" >
+      <view class="nickName" >{{wxInfo.nickName}}</view>
+      <navigator url="/pages/mine/login/login" >身份绑定+</navigator>
+    </view>
+    <navigator class="goto" url="/pages/mine/me/me" >
+      <image src="/images/into.png"></image>
+    </navigator>
+    
+  </view>
+</view>
+  <!--荣誉勋章-->
+
+<!--服务 -->
+<navigator class="serve">
+  <view class="sItem">
+    <image mode="aspectFit" src="/images/donate_blood.png"></image>
+    <text>爱心献血</text>
+  </view>
+  <!--for循环
+  <view class="sItem"  wx:for="{{order}}"  wx:key="{{order.listitem}}">
+    <image class="icon" src={{item.icon}}></image>
+    <view class="name">{{item.name}}</view>
+    <view class="tag" wx:if="{{item.tage>0}}">{{item.tag}}</view>
+  </view>-->
+  <view class="sItem">
+    <image mode="aspectFit" src="/images/2.png"></image>
+    <text>劳模勋章</text>
+    
+  </view>
+  <view class="sItem">
+    <image mode="aspectFit" src="/images/3.png"></image>
+    <text>校草认证</text>
+   <!--<view class="tag">3</view>-->
+  </view>
+  <view class="sItem">
+    <image mode="aspectFit" src="/images/6.png"></image>
+    <text>爱心人士</text>
+    <!--<view class="tag">3</view>-->
+  </view>
+  
+</navigator>

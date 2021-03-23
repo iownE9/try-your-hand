@@ -1,0 +1,35 @@
+/* */
+page{
+  background-image: url('https://pic1.zhimg.com/v2-07f7db6eea3f5eb5a9d3ad38fe1b26e4_720w.jpg?source=3af55fa1');    /*背景图*/
+  background-size: 100% 100%;   /*图片铺满全屏*/ 
+}
+/*头部文字样式*/
+.title{
+  padding-left: 60rpx;
+  height: 240rpx;/*180rpx*/
+  display: flex;
+  flex-direction: column;/*上下布局*/
+}
+
+.title .chinese{
+  font-size: 70rpx;
+  font-weight: 700;
+}
+.title .english{
+  font-size: 32rpx;
+}
+/*表单样式*/
+.inputItem{
+  width: 50%;
+  margin: 0 auto;
+  height: 80rpx;
+  padding-left:30rpx;
+  background-color: #f4f4f4;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;/* 边框圆角*/
+}
+
+
+.mini-btn{
+  margin-left: 300rpx;
+}

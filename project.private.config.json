@@ -1,0 +1,72 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "商店",
+          "pathName": "pages/shop/shop",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/test1/test1",
+          "pathName": "pages/test1/test1",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "发现",
+          "pathName": "pages/news/news",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "教务",
+          "pathName": "pages/mine/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "地图",
+          "pathName": "pages/home/map/map",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "课程表",
+          "pathName": "pages/schedule/schedule",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "绑定",
+          "pathName": "pages/mine/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "school",
+          "pathName": "pages/home/school/school",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

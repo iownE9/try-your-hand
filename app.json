@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/news/news",
+    "pages/schedule/schedule",
+    "pages/shop/shop",
+    "pages/mine/mine",
+    "components/search/search",
+    "pages/home/search/search",
+    "components/school/school",
+    "pages/mine/login/login",
+    "pages/home/school/school",
+    "pages/test1/test1",
+    "pages/home/map/map",
+    "pages/mine/me/me"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#00bdbd",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#FAFAFA",
+    "borderStyle": "black",
+    "selectedColor": "#DD1A21",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_selected.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "发现",
+        "iconPath": "images/news.png",
+        "selectedIconPath": "images/news_selected.png"
+      },
+      {
+        "pagePath": "pages/schedule/schedule",
+        "text": "课表",
+        "iconPath": "images/schedule.png",
+        "selectedIconPath": "images/schedule_selected.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "商店",
+        "iconPath": "images/shop.png",
+        "selectedIconPath": "images/shop_selected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine_selected.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

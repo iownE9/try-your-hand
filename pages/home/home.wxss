@@ -1,0 +1,130 @@
+/*学校选择*/
+.top{
+  background-color: #00b8b8;
+  width: 100%;
+  height: 150rpx;
+  position: fixed;/*位置固定在顶部*/
+  top: 0;
+  z-index: 9;/*优先显示*/
+}
+.school{
+  margin: 40rpx 0 0 10rpx;/*留出手机顶部信息栏*/
+  width: 60%;
+  height: 110rpx;
+}
+.school image{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+/*搜索栏*/
+.search{
+  margin-top: 150rpx;
+  background-color: #00b8b8;
+  height: 66.6rpx;
+}
+.search .search_content{
+  background-color: #eeeeee;
+  /*使子项水平排布*/
+  display: flex;
+  /* 边框圆角*/
+  border-radius: 30rpx;
+  /*容器宽度 66.6*0.9=59.94 */
+  width: 95%;
+  height: 90%;
+  /* 水平居中*/
+  margin: 0 auto;
+  /*行高 使文字上下居中   66.6*0.9=59.94 */
+  line-height: 60rpx;
+}
+.search .search_content image{
+  width: 30rpx;
+  height: 30rpx;
+  margin: auto 20rpx;
+}
+
+
+
+/*校训*/
+.motto{
+  /*左右自动 使其居中*/
+  margin: 0 auto;
+  width: 80%;
+  /*校训文本水平  使text 变成块元素*/
+  display: flex;
+}
+.motto text{
+  flex: 1;
+  color: #00b8b8;
+  /*水平居中*/
+  text-align: center;
+}
+
+
+/*功能快捷导航栏*/
+.middle {
+  background-color: #FFFFFF;
+  width: 95%;/*容器宽度*/
+  height: 340rpx;
+  margin: 0 auto;/*居中*/
+  border-radius: 16rpx;/* 边框圆角*/
+  padding-top: 20rpx;/*内边距 留白*/
+}
+.middle .scroll{
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap; /*可换行*/
+}
+.mItem {
+  display: flex;
+  flex-direction: column;/*上下布局*/
+  align-items: center;/* 水平居中 */
+  width: 20%;
+  height: 50%;/*两行 一行五个子项*/
+  font-size: 26rpx;/*字体大小*/
+}
+.mItem image {
+  /*
+   * 计算 使其成一个圆形区域
+   * 宽 60.8*0.8 = 48.64
+   * 高 72.5*0.672 = 48.72
+  */
+  width: 80%;
+  height: 67.2%;
+  border-radius: 50%;/* 边框圆角*/
+  background-color: #f3f1f1;
+}
+
+
+
+/*政要通知*/
+/* pages/home/school/school.wxss */
+/* .Tabs{} */
+.tabs_title{
+  display: flex; /* 伸缩盒子 */
+  font-size: 28rpx;
+}
+.title_item{
+  display: flex; /* 伸缩盒子 */
+  justify-content: center; /* 水平居中 */
+  align-items: center;  /* 垂直居中 */
+  flex: 1; /*使头部类名分开 各占一份*/
+  padding: 15rpx 0; /* 内边距上下15 左右0 */
+}
+.active{
+  color: #DD1A21;/* 激活选中时颜色 */
+  /* 下边框 边框颜色主题色 */
+  border-bottom: 1rpx solid #DD1A21;
+}
+/* tabs_content */
+
+.q{
+  
+  height: 78010rpx;
+  width: 100%;
+  background-color: burlywood;
+}

@@ -1,0 +1,19 @@
+/* pages/home/school/school.wxss */
+/* .Tabs{} */
+.tabs_title{
+  display: flex; /* 伸缩盒子 */
+  font-size: 28rpx;
+}
+.title_item{
+  display: flex; /* 伸缩盒子 */
+  justify-content: center; /* 水平居中 */
+  align-items: center;  /* 垂直居中 */
+  flex: 1; /*使头部类名分开 各占一份*/
+  padding: 15rpx 0; /* 内边距上下15 左右0 */
+}
+.active{
+  color: #DD1A21;/* 激活选中时颜色 */
+  /* 下边框 边框颜色主题色 */
+  border-bottom: 1rpx solid #DD1A21;
+}
+/* tabs_content */

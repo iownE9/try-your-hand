@@ -1,0 +1,64 @@
+.head{
+  height: 140rpx;
+  background-color: #ffffff;
+}
+/*微信登录按钮*/
+.head .wxlogin{
+  height: 76rpx;
+  border: 1rpx solid #43b55c;
+  border-radius: 86rpx;
+  width: 50%;
+  display: flex;
+}
+.head .wxlogin .wxicon{
+  width: 46rpx;
+  height: 46rpx;
+  margin-right: 16rpx;
+}
+.head .wxlogin text{
+  color: #43b55c;
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+/*用户信息*/
+.user{
+  display: flex;/*水平分布*/
+}
+.user .avatarUrl{
+  margin: 0 30rpx 0 40rpx;/*上 右 下 左*/
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 10rpx;/*边框圆角*/
+}
+.user .info{
+  display: flex;/* 这两行使 图标文字 上下分布 */
+  flex-direction: column;
+  height: 120rpx;
+  flex: 1;/*剩余宽度*/
+}
+/*用户昵称*/
+.user .info .nickName{
+  color: #000;
+  font-size: x-large;
+}
+
+.user .goto{
+  width: 130rpx;
+  height: 120rpx;
+}
+.user .goto image{
+  width: 60rpx;
+  height: 60rpx;
+  margin: 30rpx 35rpx;
+}
+
+/*荣誉勋章 图标栏 标题*/
+.serve{
+  width: 100%;/*容器宽度*/
+  margin: 0;/*与个人信息栏紧贴*/
+  border-radius: 0;/* 边框圆角，与个人信息栏一样*/
+}
+/*图标宽度*/
+.serve .sItem image{
+  width: 50%;
+}

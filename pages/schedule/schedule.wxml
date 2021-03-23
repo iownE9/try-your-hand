@@ -1,0 +1,131 @@
+<!--pages/schedule/schedule.wxml-->
+<view class="head"></view>
+<view class="head headTitle">课程表</view>
+
+<view class="table">
+  <view class="left" >
+    <view class="week">
+      <text>星期日期</text>
+    </view><view class="item">
+      <view class="title">第一节 </view>
+      <view class="time">8:30</view>
+      <view class="time">|</view>
+      <view class="time">9:15</view>
+    </view><view class="item">
+      <view class="title">第二节 </view>
+      <view class="time">9:20</view>
+      <view class="time">|</view>
+      <view class="time">10:05</view>
+    </view><view class="item">
+      <view class="title">第三节 </view>
+      <view class="time">10:25</view>
+      <view class="time">|</view>
+      <view class="time">11:10</view>
+    </view><view class="item">
+      <view class="title">第四节 </view>
+      <view class="time">11:15</view>
+      <view class="time">|</view>
+      <view class="time">12:00</view>
+    </view><view class="item">
+      <view class="title">第五节 </view>
+      <view class="time">14:30</view>
+      <view class="time">|</view>
+      <view class="time">15:15</view>
+    </view><view class="item">
+      <view class="title">第六节 </view>
+      <view class="time">15:20</view>
+      <view class="time">|</view>
+      <view class="time">16:05</view>
+    </view> <view class="item">
+      <view class="title">第七节 </view>
+      <view class="time">16:25</view>
+      <view class="time">|</view>
+      <view class="time">17:10</view>
+    </view><view class="item">
+      <view class="title">第八节 </view>
+      <view class="time">17:15</view>
+      <view class="time">|</view>
+      <view class="time">18:00</view>
+    </view><view class="item">
+      <view class="title">第九节 </view>
+      <view class="time">19:30</view>
+      <view class="time">|</view>
+      <view class="time">20:15</view>
+    </view><view class="item">
+      <view class="title">第十节 </view>
+      <view class="time">20:25</view>
+      <view class="time">|</view>
+      <view class="time">21:10</view>
+    </view>
+   
+  </view>
+
+  <view class="right">
+    <view class="week"><!--到时候 for循环-->
+      <text>周一 04-12</text>  <text>周二 04-13</text> 
+      <text>周三 04-14</text>  <text>周四 04-15</text> 
+      <text>周五 04-16</text>  <text>周六 04-17</text> <text>周日 04-18</text>  
+    </view>
+
+    <view class="Ritem"></view>
+    <view class="Ritem">
+    </view><view class="Ritem">
+    </view><view class="Ritem">
+    </view><view class="Ritem">
+    </view><view class="Ritem"></view>
+    <view class="Ritem">
+    </view><view class="Ritem">
+    </view><view class="Ritem">
+    </view><view class="Ritem">
+    </view>
+   
+  </view>
+</view>
+
+
+<!--服务 -->
+<view class="serve">
+  <view class="sTitle">学在工大</view>
+  <navigator class="sItem">
+    <image mode="aspectFit" src="https://img-blog.csdnimg.cn/2021021922542536.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+    <text>成绩查询</text>
+  </navigator>
+  <!--for循环
+  <view class="sItem"  wx:for="{{order}}"  wx:key="{{order.listitem}}">
+    <image class="icon" src={{item.icon}}></image>
+    <view class="name">{{item.name}}</view>
+    <view class="tag" wx:if="{{item.tage>0}}">{{item.tag}}</view>
+  </view>-->
+  <navigator class="sItem">
+    <image mode="aspectFit" src="https://img-blog.csdnimg.cn/20210219225353525.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+    <text>考试计划</text>
+    
+  </navigator>
+  <navigator class="sItem">
+    <image mode="aspectFit" src="https://img-blog.csdnimg.cn/2021021922524088.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+    <text>绩点计算</text>
+   <!--<view class="tag">3</view>-->
+  </navigator>
+  <navigator class="sItem">
+    <image mode="aspectFit" src="https://img-blog.csdnimg.cn/20210219234943921.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+    <text>体测成绩</text>
+    <!--<view class="tag">3</view>-->
+  </navigator>
+
+  <navigator class="sItem">
+    <image mode="aspectFit" src="/images/009-snow.png"></image>
+    <text>雨夹雪6~-3'C</text>
+    <!--<view class="tag">3</view>-->
+  </navigator>
+
+  
+  <navigator class="sItem">
+
+    <image mode="aspectFit" src="/images/English.png"></image>
+    <text>四六级查询</text>
+    <!--<view class="tag">3</view>-->
+  </navigator>
+  
+  
+  
+</view>

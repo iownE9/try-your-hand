@@ -1,0 +1,117 @@
+<!--轮播图广告栏-->
+<view class="swiper_content">
+  <!-- 轮播图   自动轮播   小点     循环轮播   上下滚动 vertical="true"-->
+  <swiper autoplay indicator-dots circular vertical>
+    <!--wx:key goods_id 必须是唯一的、不重复的-->
+    <swiper-item class="swiper_item" wx:for="{{swiperList}}"  wx:key="goods_id">
+      <!--<navigator url="{{item.navigator_url}}">-->
+        <!--mode属性 渲染模式widthFix  让图片的标签宽高 和 图片标签的内容的宽高都等比例的发生变化 -->
+        <image mode="widthFix" src="{{item.image_src}}"></image>
+      <!--</navigator>-->
+    </swiper-item>
+  </swiper>
+</view>
+
+<!--功能栏-->
+<view class="shop">
+  <!--到时候弄个双重for循环，第一个一重子项的内容遍历完后 使用分割留白；再遍历下一个一重子项-->
+  <!--小卖部  bar-->
+  <navigator class="item">
+    <image src="https://img-blog.csdnimg.cn/20210220142024890.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+    <view class="title">兜圈子商城 配送到寝</view>
+    <image src="/images/into.png"></image>
+  </navigator>
+</view>
+
+<view class="shop">
+  <!--餐厅  canteen  到时候弄一个for循环-->  
+  <navigator  class="item">
+    <image src="https://img-blog.csdnimg.cn/20210220142036439.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+    <view class="title">一餐</view>
+    <image src="/images/into.png"></image>
+  </navigator>     
+  <navigator  class="item">
+    <image src="https://img-blog.csdnimg.cn/20210220142109653.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+    <view class="title">二餐</view>
+    <image src="/images/into.png"></image>
+  </navigator>
+  <navigator  class="item">
+    <image src="https://img-blog.csdnimg.cn/20210220142117953.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+    <view class="title">三餐</view>
+    <image src="/images/into.png"></image>
+  </navigator>
+  <navigator  class="item">
+    <image src="https://img-blog.csdnimg.cn/20210220142126791.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+    <view class="title">西门美食街</view>
+    <image src="/images/into.png"></image>
+  </navigator>
+  <navigator  class="item">
+    <image src="https://img-blog.csdnimg.cn/20210220142136558.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+    <view class="title">食来运转</view>
+    <image src="/images/into.png"></image>
+  </navigator>
+</view>
+
+<view class="shop">
+  <!--其他商店 shop-->  
+  <navigator  class="item">
+      <image src="https://img-blog.csdnimg.cn/20210220142150636.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+      <view class="title">轮播图广告合作：iownE9</view>
+      <image src="/images/into.png"></image>
+  </navigator>
+ 
+</view>
+
+
+
+
+<!--服务 -->
+<view class="serve">
+  <view class="sTitle">我的服务</view>
+  <navigator class="sItem">
+    <image mode="aspectFit" src="https://yanxuan.nosdn.127.net/16062838057234680.png"></image>
+    <text>全部订单</text>
+  </navigator>
+  <!--for循环
+  <view class="sItem"  wx:for="{{order}}"  wx:key="{{order.listitem}}">
+    <image class="icon" src={{item.icon}}></image>
+    <view class="name">{{item.name}}</view>
+    <view class="tag" wx:if="{{item.tage>0}}">{{item.tag}}</view>
+  </view>-->
+  <navigator class="sItem">
+    <image mode="aspectFit" src="https://yanxuan.nosdn.127.net/16063714996364706.png"></image>
+    <text>待付款</text>
+    <view class="tag">13</view>
+  </navigator>
+  <navigator class="sItem">
+    <image mode="aspectFit" src="https://yanxuan.nosdn.127.net/16063714996024705.png"></image>
+    <text>待发货</text>
+   <!--<view class="tag">3</view>-->
+  </navigator>
+  <navigator class="sItem">
+    <image mode="aspectFit" src="https://yanxuan.nosdn.127.net/16063714306404703.png"></image>
+    <text>已发货</text>
+    <!--<view class="tag">3</view>-->
+  </navigator>
+  <navigator class="sItem">
+    <image mode="aspectFit" src="https://yanxuan.nosdn.127.net/16063714306834704.png"></image>
+    <text>待评价</text>
+    <view class="tag">3</view>
+  </navigator>
+  <navigator class="sItem">
+    <image mode="aspectFit" src="https://yanxuan.nosdn.127.net/16063716881904714.png "></image>
+    <text>帮助与客服</text>
+  </navigator>
+  <navigator class="sItem">
+    <image mode="aspectFit" src="https://yanxuan.nosdn.127.net/16063716879084710.png"></image>
+    <text>退换/售后</text>
+  </navigator>
+  <navigator class="sItem">
+    <image mode="aspectFit" src="https://yanxuan.nosdn.127.net/16063716875564708.png"></image>
+    <text>我要反馈</text>
+  </navigator>
+  <navigator class="sItem">
+    <image mode="aspectFit" src="https://yanxuan.nosdn.127.net/16063716873184707.png"></image>
+    <text>地址管理</text>
+  </navigator>
+</view>

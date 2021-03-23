@@ -1,0 +1,15 @@
+<!--头部文字样式-->
+<view class="title">
+    <text class="chinese">学生身份绑定</text>
+    <text class="english">Bind your academic account</text>
+</view>
+<!--form表单-->
+<form bindsubmit="formSubmit">
+    <input class="inputItem" name="school" value="河南工业大学"></input>
+    <input class="inputItem"  name="studentID" placeholder="学号" type="number" value="{{studentID}}"></input>
+    <input class="inputItem" password name="studentPassword" placeholder="教务系统密码" type="text" value="{{studentPassword}}"></input>
+   
+    
+    
+    <button class="mini-btn" size="mini" formType="submit" >绑定</button>
+</form>

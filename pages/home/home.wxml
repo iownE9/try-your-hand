@@ -1,0 +1,132 @@
+<!--学校图标-->
+<view class="top">
+  <!--aspectFit  上下按css样式 左右图片缩放-->
+  <!-- <image mode="aspectFit" src="{{school.logo}}"></image>-->
+  <navigator class="school" url="/pages/home/school/school">
+    <image mode="aspectFit" src="https://img-blog.csdnimg.cn/20210219235145472.png#pic_center"></image>
+  </navigator>
+</view>
+
+
+
+<!--搜素框  navigate跳转页面链接  至非tabBar页面-->
+<view class="search">
+  <navigator class="search_content" url="/pages/home/search/search">
+    <image src="https://img-blog.csdnimg.cn/20210219235607275.png#pic_center"></image>
+    <view class="title">search..</view>
+  </navigator>
+</view>
+
+<!--轮播图广告栏-->
+<view class="swiper_content">
+  <!-- 轮播图   自动轮播   小点     循环轮播-->
+  <swiper autoplay indicator-dots circular>
+      <!--wx:key goods_id 必须是唯一的、不重复的    -->
+      <swiper-item class="swiper_item" wx:for="{{swiperList}}"  wx:key="goods_id">
+        <!--<navigator url="{{item.navigator_url}}">-->
+        <!--widthFix  左右按css样式 上下图片缩放-->
+          <image mode="widthFix" src="{{item.image_src}}"></image>
+        <!--</navigator>-->
+      </swiper-item>
+
+  </swiper>
+</view>
+
+<!--学校校训-->
+<view class="motto"><!--到时候 for循环-->
+   <text>明德</text>  <text>求是</text>  <text>拓新</text>  <text>笃行</text>
+</view>
+
+
+<!--功能快捷导航栏-->
+<view class="middle">
+  <scroll-view class="scroll" enable-flex scroll-y>
+    <!--到时候 for循环-->
+    <navigator class="mItem">
+      <!--mode="aspectFit" 等比例缩放，完整地将图片显示出来-->
+      <image mode="aspectFit" src="/images/school.png"></image>
+      <text>河工大</text>
+    </navigator>
+    <navigator class="mItem">
+      <!--mode="aspectFit" 等比例缩放，完整地将图片显示出来-->
+      <image mode="aspectFit" src="https://img-blog.csdnimg.cn/20210220000217330.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+      <text>报修</text>
+    </navigator>
+    <navigator class="mItem">
+      <!--mode="aspectFit" 等比例缩放，完整地将图片显示出来-->
+      <image mode="aspectFit" src="https://img-blog.csdnimg.cn/20210220000239777.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+      <text>百团大战</text>
+    </navigator>
+    <navigator class="mItem">
+      <!--mode="aspectFit" 等比例缩放，完整地将图片显示出来-->
+      <image mode="aspectFit" src="https://img-blog.csdnimg.cn/20210220000316237.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+      <text>红歌嘹亮</text>
+    </navigator>
+    <navigator class="mItem">
+      <!--mode="aspectFit" 等比例缩放，完整地将图片显示出来-->
+      <image mode="aspectFit" src="https://img-blog.csdnimg.cn/20210220000329976.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+      <text>图书馆</text>
+    </navigator>
+    <navigator class="mItem">
+      <!--mode="aspectFit" 等比例缩放，完整地将图片显示出来-->
+      <image mode="aspectFit" src="https://img-blog.csdnimg.cn/20210220000352140.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+      <text>学习资料</text>
+    </navigator>
+    <navigator class="mItem" url="/pages/home/map/map">
+      <!--mode="aspectFit" 等比例缩放，完整地将图片显示出来-->
+      <image mode="aspectFit" src="https://img-blog.csdnimg.cn/2021022000042779.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+      <text>校园地图</text>
+    </navigator>
+    <navigator class="mItem">
+      <!--mode="aspectFit" 等比例缩放，完整地将图片显示出来-->
+      <image mode="aspectFit" src="https://img-blog.csdnimg.cn/2021022000043816.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+      <text>明日之星</text>
+    </navigator>
+    <navigator class="mItem">
+      <!--mode="aspectFit" 等比例缩放，完整地将图片显示出来-->
+      <image mode="aspectFit" src="https://img-blog.csdnimg.cn/20210220000139215.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+      <text>校历</text>
+    </navigator> 
+
+
+    <navigator class="mItem">
+      <!--mode="aspectFit" 等比例缩放，完整地将图片显示出来-->
+      <image mode="aspectFit" src="https://img-blog.csdnimg.cn/20210220000217330.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+      <text>报修</text>
+    </navigator>
+    <navigator class="mItem">
+      <!--mode="aspectFit" 等比例缩放，完整地将图片显示出来-->
+      <image mode="aspectFit" src="https://img-blog.csdnimg.cn/20210220000239777.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+      <text>百团大战</text>
+    </navigator>
+    <navigator class="mItem">
+      <!--mode="aspectFit" 等比例缩放，完整地将图片显示出来-->
+      <image mode="aspectFit" src="https://img-blog.csdnimg.cn/20210220000316237.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+      <text>红歌嘹亮</text>
+    </navigator>
+
+    <navigator class="mItem">
+      <!--mode="aspectFit" 等比例缩放，完整地将图片显示出来-->
+      <image mode="aspectFit" src="https://img-blog.csdnimg.cn/2021022000025917.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUwMzc3NTU5,size_16,color_FFFFFF,t_70#pic_center"></image>
+    <text>意见反馈</text>
+    </navigator>
+  </scroll-view>
+</view>
+
+
+
+
+
+<!--政要通知-->
+<view class="tabs_title">
+  <view  wx:for="{{tabs}}"  wx:key="id"  class="title_item  {{item.isActive?'active':''}} "  bindtap="noticeId"  data-index="{{index}}"  >
+    {{item.value}}
+  </view>
+</view>
+
+
+
+
+
+<view class="q"></view>
+
